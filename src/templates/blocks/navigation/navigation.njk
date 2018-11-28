@@ -1,0 +1,11 @@
+{% from "data/links.njk" import links %}
+
+<nav class="nav">
+    <ul class="nav-list">
+        {% for item in links %}
+            <li class="nav-item">
+                <a href="{{ item.url }}-page.html" class="nav-link">{{item.title}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

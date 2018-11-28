@@ -1,0 +1,9 @@
+{% macro burger() %}
+    <button class="burger">
+        <span class="burger-inner">
+            {% for item in range(1,2) -%}
+                <span class="burger-stroke"></span>
+            {%- endfor %}
+        </span>
+    </button>
+{% endmacro %}
